@@ -89,6 +89,8 @@ h3,
   letter-spacing: -0.01em;
   color: var(--burgundy);
   text-wrap: balance;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "calt" 0, "dlig" 0;
 }
 
 h1 {
@@ -98,6 +100,9 @@ h1 {
 
 h2 {
   font-size: var(--text-h2);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 h3 {
