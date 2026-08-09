@@ -16,6 +16,21 @@
 
   /* ---------- Templates ---------- */
 
+  function programCardBody(desc) {
+    var paragraphs = String(desc || "")
+      .split(/\n\n+/)
+      .map(function (p) {
+        return p.trim();
+      })
+      .filter(Boolean);
+
+    return paragraphs
+      .map(function (p) {
+        return "<p>" + escapeHtml(p) + "</p>";
+      })
+      .join("");
+  }
+
   function programCard(program, mode) {
     var title =
       mode === "home" ? program.homeTitle || program.title : program.title;
@@ -28,9 +43,7 @@
       "<h3>" +
       escapeHtml(title) +
       "</h3>" +
-      "<p>" +
-      escapeHtml(desc) +
-      "</p>" +
+      programCardBody(desc) +
       '<a class="link-arrow" href="' +
       escapeHtml(cta.href) +
       '">' +

@@ -10,7 +10,8 @@ window.RAHMA.programs = [
     slug: "gatherings",
     title: "Community Gatherings",
     home: true,
-    homeDesc: "Dinners, coffee and tea, conversations that run long. Connection over formality.",
+    homeDesc:
+      "We believe sisterhood is built in the moments between the big ones\u2014over shared meals, long walks, laughter, and simply making time for one another. Our community gatherings create opportunities for Muslim women to step away from the routine, meet new sisters, strengthen friendships, and enjoy beautiful experiences together.\n\nFrom beach days, hikes, game nights, and community dinners to picnics, coffee and tea gatherings, nature outings, cultural celebrations, creative nights, potlucks, museum visits, volunteer days, wellness activities, and seasonal gatherings, there is always an invitation to come as you are, bring a friend, and be part of the community. Connection over formality.",
     desc: "Dinners, coffee and tea meetups, unhurried conversation. The easiest way in — come once, and you'll know someone.",
     cta: { label: "Gather with us", href: "events.html" },
     homeCta: { label: "Gather with us", href: "events.html" },
@@ -20,7 +21,8 @@ window.RAHMA.programs = [
     title: "Shaah & Caano",
     home: true,
     spotlight: true,
-    homeDesc: "Our women's book club: books, tea, reflection, and sisterhood.",
+    homeDesc:
+      "Shaah & Caano is a women\u2019s book club where we gather around good books, warm tea, and meaningful conversation. We read, reflect, laugh, ask questions, and explore the ideas that shape our faith, identities, relationships, and lives\u2014creating a space where sisters can connect, learn from one another, and simply enjoy being together. Beyond the pages, Shaah iyo Caano is about building friendships, sharing experiences, supporting one another, and making beautiful memories over a cup of tea.",
     desc: "A women's book club and gathering around a shared table — reading, reflection, conversation, tea, and sisterhood.",
     cta: { label: "Pull up a chair", href: "programs.html#shaah-caano" },
     homeCta: { label: "Pull up a chair", href: "programs.html#shaah-caano" },
