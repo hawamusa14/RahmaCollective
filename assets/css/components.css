@@ -410,6 +410,20 @@
   aspect-ratio: 4 / 5;
 }
 
+.hero__art .art-panel--tall {
+  aspect-ratio: 1 / 1;
+  background: transparent;
+  border: none;
+  overflow: visible;
+}
+
+.hero__art .hero__art-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 /* Photo slots: replace an art panel with <img> when real photography exists. */
 .photo-slot {
   position: relative;
