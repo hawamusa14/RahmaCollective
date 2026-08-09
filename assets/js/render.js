@@ -1,65 +1,38 @@
-/* Rahma Collective — collection rendering
- *
- * Renders the data collections (window.RAHMA.*) into containers marked with
- * data-render attributes. Templates live here so the markup stays consistent
- * everywhere a collection appears — and so a CMS can later replace the data
- * files without touching a single page.
- */
+/* Rahma Collective — content renderer
+   Renders data collections (window.RAHMA.*) into [data-render] targets.
+   Replace the data files with a CMS feed later and the templates stay unchanged. */
 (function () {
   "use strict";
 
-  var data = window.RAHMA || {};
+  var RAHMA = window.RAHMA || {};
 
-  function escapeHtml(value) {
-    return String(value)
+  function escapeHtml(str) {
+    return String(str == null ? "" : str)
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#39;");
+      .replace(/"/g, "&quot;");
   }
 
-  /* ---------- programs ---------- */
+  /* ---------- Templates ---------- */
 
-  function programCard(program, useHomeCopy) {
-    var title = useHomeCopy && program.homeTitle ? program.homeTitle : program.title;
-    var desc = useHomeCopy && program.homeDesc ? program.homeDesc : program.desc;
-    var cta = (useHomeCopy && program.homeCta) || program.cta;
+  function programCard(program) {
     return (
-      '<article class="card program-card reveal" id="' +
-      escapeHtml(program.slug) +
-      '">' +
+      '<article class="card program-card reveal">' +
       "<h3>" +
-      escapeHtml(title) +
+      escapeHtml(program.title) +
       "</h3>" +
       "<p>" +
-      escapeHtml(desc) +
+      escapeHtml(program.programs || program.home) +
       "</p>" +
       '<a class="link-arrow" href="' +
-      escapeHtml(cta.href) +
+      escapeHtml(program.href) +
       '">' +
-      escapeHtml(cta.label) +
+      escapeHtml(program.cta) +
       "</a>" +
       "</article>"
     );
   }
-
-  function renderPrograms() {
-    document.querySelectorAll('[data-render="programs"]').forEach(function (container) {
-      var mode = container.getAttribute("data-mode") || "all";
-      var programs = (data.programs || []).filter(function (p) {
-        if (mode === "home") return p.home;
-        return !p.spotlight;
-      });
-      container.innerHTML = programs
-        .map(function (p) {
-          return programCard(p, mode === "home");
-        })
-        .join("");
-    });
-  }
-
-  /* ---------- events ---------- */
 
   var AUDIENCE_LABELS = {
     everyone: "Everyone",
@@ -67,22 +40,22 @@
     men: "Men",
     youth: "Youth & teens",
     families: "Families",
+    volunteers: "Volunteers",
   };
 
-  function eventCard(event) {
+  function eventCard(event, isPast) {
     var audience = AUDIENCE_LABELS[event.audience] || event.audience;
-    return (
-      '<article class="card event-card reveal" data-type="' +
-      escapeHtml(event.type) +
-      '" data-audience="' +
-      escapeHtml(event.audience) +
-      '">' +
-      '<span class="card__date"><time datetime="' +
+    var dateLine =
+      '<time datetime="' +
       escapeHtml(event.dateISO) +
       '">' +
       escapeHtml(event.displayDate) +
-      "</time> · " +
-      escapeHtml(event.time) +
+      "</time>";
+    if (event.time) dateLine += " · " + escapeHtml(event.time);
+    return (
+      '<article class="card event-card reveal">' +
+      '<span class="card__date">' +
+      dateLine +
       "</span>" +
       "<h3>" +
       escapeHtml(event.title) +
@@ -94,107 +67,49 @@
       '<span class="pill">' +
       escapeHtml(audience) +
       "</span>" +
+      (isPast ? '<span class="pill pill--outline">Past gathering</span>' : "") +
       "</div>" +
       "<p>" +
       escapeHtml(event.description) +
       "</p>" +
-      '<a class="link-arrow" href="' +
-      escapeHtml(event.rsvp) +
-      '">Reserve a seat</a>' +
+      (!isPast && event.rsvp
+        ? '<a class="link-arrow" href="' + escapeHtml(event.rsvp) + '">Reserve a seat</a>'
+        : "") +
       "</article>"
     );
   }
-
-  function renderEvents() {
-    document.querySelectorAll('[data-render="events"]').forEach(function (section) {
-      var list = section.querySelector("[data-events-list]");
-      var empty = section.querySelector("[data-events-empty]");
-      var filters = section.querySelector("[data-filters]");
-      var limit = parseInt(section.getAttribute("data-limit") || "0", 10);
-      var events = data.events || [];
-      if (limit > 0) events = events.slice(0, limit);
-
-      var active = { type: "all", audience: "all" };
-
-      function apply() {
-        var visible = events.filter(function (event) {
-          var typeOk = active.type === "all" || event.type === active.type;
-          var audienceOk = active.audience === "all" || event.audience === active.audience;
-          return typeOk && audienceOk;
-        });
-        if (list) {
-          list.innerHTML = visible.map(eventCard).join("");
-          list.hidden = visible.length === 0;
-        }
-        if (empty) empty.hidden = visible.length !== 0;
-        if (typeof window.RAHMA_REFRESH_REVEALS === "function") {
-          window.RAHMA_REFRESH_REVEALS();
-        }
-      }
-
-      if (filters) {
-        if (events.length === 0) {
-          filters.hidden = true;
-        } else {
-          filters.querySelectorAll(".filter-pill").forEach(function (pill) {
-            pill.addEventListener("click", function () {
-              var group = pill.getAttribute("data-group");
-              active[group] = pill.getAttribute("data-value");
-              filters
-                .querySelectorAll('.filter-pill[data-group="' + group + '"]')
-                .forEach(function (peer) {
-                  var isActive = peer === pill;
-                  peer.classList.toggle("is-active", isActive);
-                  peer.setAttribute("aria-pressed", String(isActive));
-                });
-              apply();
-            });
-          });
-        }
-      }
-
-      apply();
-    });
-  }
-
-  /* ---------- board ---------- */
 
   function boardCard(member) {
     if (member.placeholder) {
       return (
-        '<article class="card profile-card reveal" aria-label="Board member — details coming soon">' +
-        '<span class="profile-card__ring" aria-hidden="true"></span>' +
+        '<article class="card profile-card reveal">' +
+        '<span class="profile-card__ring" aria-hidden="true">?</span>' +
         "<h3>Board member</h3>" +
-        '<p class="meta">Name, role, bio &amp; photo — coming soon</p>' +
+        '<p class="meta">To be announced</p>' +
         "</article>"
       );
     }
-    var photo = member.photo
-      ? '<img class="profile-card__ring" src="' + escapeHtml(member.photo) + '" alt="" loading="lazy">'
+    var ring = member.photo
+      ? '<span class="profile-card__ring" aria-hidden="true"><img src="' +
+        escapeHtml(member.photo) +
+        '" alt=""></span>'
       : '<span class="profile-card__ring" aria-hidden="true">' +
         escapeHtml(member.name.charAt(0)) +
         "</span>";
+    var details = [];
+    if (member.role) details.push(escapeHtml(member.role));
+    if (member.area) details.push(escapeHtml(member.area));
     return (
       '<article class="card profile-card reveal">' +
-      photo +
+      ring +
       "<h3>" +
       escapeHtml(member.name) +
       "</h3>" +
-      '<p class="meta">' +
-      escapeHtml(member.role + (member.area ? " · " + member.area : "")) +
-      "</p>" +
+      (details.length ? '<p class="meta">' + details.join(" · ") + "</p>" : "") +
       (member.bio ? "<p>" + escapeHtml(member.bio) + "</p>" : "") +
       "</article>"
     );
   }
-
-  function renderBoard() {
-    document.querySelectorAll('[data-render="board"]').forEach(function (container) {
-      container.innerHTML = (data.board || []).map(boardCard).join("");
-    });
-  }
-
-  /* ---------- stories ---------- */
 
   function storyCard(story) {
     return (
@@ -202,21 +117,178 @@
       "<blockquote>&ldquo;" +
       escapeHtml(story.quote) +
       "&rdquo;</blockquote>" +
-      '<p class="meta">' +
-      escapeHtml(story.name + (story.context ? " · " + story.context : "")) +
+      '<p class="meta">— ' +
+      escapeHtml(story.attribution) +
       "</p>" +
       "</article>"
     );
   }
 
-  function renderStories() {
-    document.querySelectorAll('[data-render="stories"]').forEach(function (container) {
-      var stories = data.stories || [];
-      if (stories.length > 0) {
-        container.innerHTML = stories.map(storyCard).join("");
+  /* ---------- Programs ---------- */
+
+  function renderPrograms() {
+    document.querySelectorAll('[data-render="programs"]').forEach(function (el) {
+      var mode = el.getAttribute("data-mode") || "all";
+      var programs = (RAHMA.programs || []).filter(function (p) {
+        if (mode === "home") return p.home;
+        if (mode === "spotlight") return p.spotlight;
+        return true;
+      });
+      el.innerHTML = programs.map(programCard).join("");
+    });
+  }
+
+  /* ---------- Events ---------- */
+
+  function localDate(iso) {
+    var parts = String(iso).split("-").map(Number);
+    return new Date(parts[0], parts[1] - 1, parts[2]);
+  }
+
+  function splitEvents(events) {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var upcoming = [];
+    var past = [];
+    (events || []).forEach(function (e) {
+      (localDate(e.dateISO) >= today ? upcoming : past).push(e);
+    });
+    upcoming.sort(function (a, b) {
+      return localDate(a.dateISO) - localDate(b.dateISO);
+    });
+    past.sort(function (a, b) {
+      return localDate(b.dateISO) - localDate(a.dateISO);
+    });
+    return { upcoming: upcoming, past: past };
+  }
+
+  function renderEvents() {
+    var sections = document.querySelectorAll('[data-render="events"]');
+    var split = splitEvents(RAHMA.events);
+
+    sections.forEach(function (section) {
+      var list = section.querySelector("[data-events-list]");
+      var empty = section.querySelector("[data-events-empty]");
+      var filterWrap = section.querySelector("[data-filters]");
+      var limit = parseInt(section.getAttribute("data-limit"), 10) || Infinity;
+      var emptyTitle = empty ? empty.querySelector("h3") : null;
+      var emptyText = empty ? empty.querySelector("p") : null;
+      var origTitle = emptyTitle ? emptyTitle.innerHTML : "";
+      var origText = emptyText ? emptyText.innerHTML : "";
+
+      function activeValue(group) {
+        var pill = section.querySelector('.filter-pill.is-active[data-group="' + group + '"]');
+        return pill ? pill.getAttribute("data-value") : "all";
       }
-      // When empty, the static, clearly-labeled placeholder cards in the
-      // page markup remain visible instead.
+
+      function apply() {
+        var typeVal = activeValue("type");
+        var audVal = activeValue("audience");
+
+        var filtered = split.upcoming.filter(function (e) {
+          var typeOk = typeVal === "all" || e.type === typeVal;
+          var audOk =
+            audVal === "all" || e.audience === audVal || e.audience === "everyone";
+          return typeOk && audOk;
+        });
+
+        if (!split.upcoming.length) {
+          if (list) {
+            list.innerHTML = "";
+            list.hidden = true;
+          }
+          if (filterWrap) filterWrap.hidden = true;
+          if (empty) {
+            if (emptyTitle) emptyTitle.innerHTML = origTitle;
+            if (emptyText) emptyText.innerHTML = origText;
+            empty.hidden = false;
+          }
+          return;
+        }
+
+        if (filterWrap) filterWrap.hidden = false;
+
+        if (filtered.length) {
+          if (empty) empty.hidden = true;
+          if (list) {
+            list.innerHTML = filtered
+              .slice(0, limit)
+              .map(function (e) {
+                return eventCard(e, false);
+              })
+              .join("");
+            list.hidden = false;
+          }
+        } else {
+          if (list) {
+            list.innerHTML = "";
+            list.hidden = true;
+          }
+          if (empty) {
+            if (emptyTitle) emptyTitle.textContent = "Nothing matches those filters";
+            if (emptyText) emptyText.textContent = "Try widening the net.";
+            empty.hidden = false;
+          }
+        }
+      }
+
+      if (filterWrap) {
+        filterWrap.querySelectorAll(".filter-pill").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var group = btn.getAttribute("data-group");
+            filterWrap
+              .querySelectorAll('.filter-pill[data-group="' + group + '"]')
+              .forEach(function (b) {
+                b.classList.remove("is-active");
+                b.setAttribute("aria-pressed", "false");
+              });
+            btn.classList.add("is-active");
+            btn.setAttribute("aria-pressed", "true");
+            apply();
+          });
+        });
+      }
+
+      apply();
+    });
+
+    // Past gatherings (events page) — no filters, no RSVP links.
+    var pastSection = document.querySelector("[data-events-past-section]");
+    if (pastSection) {
+      var pastList = pastSection.querySelector("[data-events-past]");
+      if (split.past.length && pastList) {
+        pastList.innerHTML = split.past
+          .map(function (e) {
+            return eventCard(e, true);
+          })
+          .join("");
+        pastSection.hidden = false;
+      } else {
+        pastSection.hidden = true;
+      }
+    }
+
+    // Real numbers where we have them: gatherings hosted to date.
+    document.querySelectorAll('[data-stat="events-hosted"]').forEach(function (el) {
+      if (split.past.length) el.textContent = split.past.length;
+    });
+  }
+
+  /* ---------- Board ---------- */
+
+  function renderBoard() {
+    document.querySelectorAll('[data-render="board"]').forEach(function (el) {
+      el.innerHTML = (RAHMA.board || []).map(boardCard).join("");
+    });
+  }
+
+  /* ---------- Stories (static placeholders remain until real stories exist) ---------- */
+
+  function renderStories() {
+    var stories = RAHMA.stories || [];
+    if (!stories.length) return;
+    document.querySelectorAll('[data-render="stories"]').forEach(function (el) {
+      el.innerHTML = stories.map(storyCard).join("");
     });
   }
 

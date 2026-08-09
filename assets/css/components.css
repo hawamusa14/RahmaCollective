@@ -158,6 +158,19 @@
   height: 1.5rem;
 }
 
+.wordmark__mark {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.site-footer .wordmark__mark {
+  outline: 1px solid var(--on-deep-line);
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -535,6 +548,13 @@
   font-size: 1.25rem;
   color: var(--burgundy);
   background: var(--ivory);
+}
+
+.profile-card__ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-card h3 {
