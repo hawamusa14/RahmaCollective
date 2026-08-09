@@ -42,7 +42,8 @@ window.RAHMA.programs = [
     slug: "mentorship",
     title: "Mentorship",
     home: true,
-    homeDesc: "Across generations and professions — because nobody should have to figure it out alone.",
+    homeDesc:
+      "Across generations and professions \u2014 because nobody should have to figure it out alone.\n\nOur mentorship program connects women with a community of sisters who are willing to share their knowledge, experiences, and networks. Members have opportunities to build meaningful professional relationships, connect with women from different industries and career paths, seek guidance from those who have walked similar roads, and learn from one another.\n\nWhether you\u2019re exploring a career, navigating your first job, considering a career change, building a business, pursuing graduate school, or simply looking for someone who understands where you are headed, our community is a place to ask questions and find support. Through mentorship, networking events, professional introductions, peer guidance, skill-sharing, and conversations with women across different fields, we hope to make professional growth feel more connected, accessible, and collaborative.",
     desc: "Career guidance, youth mentorship, professional networking, peer support, faith-based mentoring, leadership development. Someone here has walked your road.",
     cta: { label: "Become a mentor", href: "get-involved.html?interest=mentorship#form" },
     homeCta: { label: "Find a mentor", href: "get-involved.html?interest=mentorship#form" },
