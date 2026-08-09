@@ -21,21 +21,27 @@ window.RAHMA.board = [
   {
     name: "Faduma Haji",
     roles: [
-      "Co-Director of Professional Development & Mentorship",
+      "Director of Professional Development & Mentorship",
       "Co-Director of Membership Coordination",
     ],
   },
   {
     name: "Faiza",
-    roles: ["Co-Director of Partnerships & Development"],
+    roles: ["Board Treasurer", "Co-Director of Partnerships & Development"],
   },
   {
     name: "Bita Mosallai",
-    roles: ["Co-Director of Marketing & Communications"],
+    roles: [
+      "Director of Community Outreach & Engagement",
+      "Co-Director of Marketing & Communications",
+    ],
   },
   {
     name: "Hany Musa",
-    roles: ["Board Secretary"],
+    roles: [
+      "Board Secretary",
+      "Director of Social Impact & Community Initiatives",
+    ],
   },
   {
     name: "Khadija Artan",
@@ -46,6 +52,9 @@ window.RAHMA.board = [
   },
   {
     name: "Noor Haleem",
-    roles: ["Board member"],
+    roles: [
+      "Co-Director of Events & Programming",
+      "Co-Director of Professional Development & Mentorship",
+    ],
   },
 ];
