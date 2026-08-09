@@ -53,7 +53,8 @@ window.RAHMA.programs = [
     title: "Youth & Teen Programming",
     homeTitle: "Youth & Teens",
     home: true,
-    homeDesc: "Friendship, leadership, identity, and honest questions — a place for the next generation.",
+    homeDesc:
+      "Friendship, leadership, identity, and honest questions \u2014 a place for the next generation.\n\nWe believe sisterhood starts early. Our youth and teen programs create a welcoming space for Muslim girls to build confidence, form meaningful friendships, explore their identities, strengthen their connection to their faith, and develop skills that prepare them for the future.\n\nThrough mentorship, workshops, creative activities, community outings, leadership opportunities, discussions, and service projects, we give young women the opportunity to ask questions, express themselves, discover their strengths, and learn from women who can help guide them. Our goal is to nurture confident, grounded, compassionate young women who know they have a community behind them.",
     desc: "Friendship, leadership, identity, confidence, and honest questions — with mentors who remember what it felt like. Service included; eye-rolls tolerated.",
     cta: { label: "For parents & young people", href: "contact.html?type=general#form" },
     homeCta: { label: "For young people", href: "programs.html#youth" },
@@ -63,7 +64,8 @@ window.RAHMA.programs = [
     title: "Community Outings",
     home: true,
     homeTitle: "Service & Outings",
-    homeDesc: "Experiencing San Diego together — and giving back to it.",
+    homeDesc:
+      "Experiencing San Diego together \u2014 and giving back to it.\n\nService & Giving Back\n\nWe believe community is not only about what we receive from one another, but what we give. Through volunteer opportunities, community service projects, donation drives, mutual aid, fundraising initiatives, and partnerships with local organizations, we create meaningful ways for sisters to show up for others and make a difference.\n\nFrom supporting families in need and giving back to our local communities to organizing food and clothing drives, visiting those who may feel alone, volunteering with nonprofits, supporting small businesses, and responding to community needs, our service initiatives are rooted in compassion, generosity, and the belief that even small acts of kindness can create lasting impact.",
     desc: "Coastlines, trails, museums, service days — experiencing San Diego together, because community is built through shared experiences, not just shared rooms.",
     cta: { label: "Come along", href: "events.html" },
     homeCta: { label: "Come along", href: "events.html" },
