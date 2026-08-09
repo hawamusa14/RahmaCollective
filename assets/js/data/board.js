@@ -46,6 +46,7 @@ window.RAHMA.board = [
   {
     name: "Khadija Artan",
     roles: [
+      "Director of Research & Impact",
       "Co-Director of Marketing & Communications",
       "Co-Director of Professional Development & Mentorship",
     ],
