@@ -59,7 +59,7 @@ window.RAHMA.events = [
     type: "book-club",
     audience: "women",
     description:
-      "The circle takes the conversation outdoors — an evening by the water in La Jolla, with The Barakah Effect, shared food, and a longer table.",
+      "The circle takes the conversation outdoors — an evening by the water in La Jolla, with The Barakah Effect, shared food, and a longer table. Joined by Rawda House, who provided amazing, delicious mocktails!",
   },
   {
     title: "Shaah & Caano — The Barakah Effect",
@@ -92,7 +92,7 @@ window.RAHMA.events = [
     type: "book-club",
     audience: "women",
     description:
-      "The circle settles into The Barakah Effect — chapter by chapter, cup by cup.",
+      "The circle settles into The Barakah Effect — chapter by chapter, cup by cup. Joined by Star & Sugar, a local cookie-tin dessert shop whose gorgeous, giftable tins of cookies turned every break into a little celebration.",
   },
   {
     title: "Shaah & Caano — Beginning The Barakah Effect",
