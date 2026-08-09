@@ -407,6 +407,12 @@
   object-fit: cover;
 }
 
+.art-panel--logo img {
+  object-fit: cover;
+  object-position: center top;
+  transform: scale(1.6) translateY(6%);
+}
+
 .art-panel--tall {
   aspect-ratio: 4 / 5;
 }
