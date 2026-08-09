@@ -446,6 +446,19 @@
   max-width: 16em;
 }
 
+.photo-slot:has(img) {
+  padding: 0;
+  border-style: solid;
+  border-color: var(--card-line);
+  overflow: hidden;
+}
+
+.photo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .motif-divider {
   display: flex;
   justify-content: center;
