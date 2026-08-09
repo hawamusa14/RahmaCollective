@@ -16,19 +16,25 @@
 
   /* ---------- Templates ---------- */
 
-  function programCard(program) {
+  function programCard(program, mode) {
+    var title =
+      mode === "home" ? program.homeTitle || program.title : program.title;
+    var desc =
+      mode === "home" ? program.homeDesc || program.desc : program.desc;
+    var cta = mode === "home" ? program.homeCta || program.cta : program.cta;
+
     return (
       '<article class="card program-card reveal">' +
       "<h3>" +
-      escapeHtml(program.title) +
+      escapeHtml(title) +
       "</h3>" +
       "<p>" +
-      escapeHtml(program.programs || program.home) +
+      escapeHtml(desc) +
       "</p>" +
       '<a class="link-arrow" href="' +
-      escapeHtml(program.href) +
+      escapeHtml(cta.href) +
       '">' +
-      escapeHtml(program.cta) +
+      escapeHtml(cta.label) +
       "</a>" +
       "</article>"
     );
@@ -143,7 +149,9 @@
         if (mode === "spotlight") return p.spotlight;
         return true;
       });
-      el.innerHTML = programs.map(programCard).join("");
+      el.innerHTML = programs.map(function (p) {
+        return programCard(p, mode);
+      }).join("");
     });
   }
 

@@ -30,7 +30,8 @@ window.RAHMA.programs = [
     title: "Workshops",
     homeTitle: "Workshops & Learning",
     home: true,
-    homeDesc: "Practical, thoughtful sessions — faith, wellness, career, money, family, and the questions in between.",
+    homeDesc:
+      "Our workshops are designed for all women in our community to learn, explore, and build practical skills together. From technology and IT, financial literacy and career development to cooking, healthy eating, nutrition, creative arts, wellness, entrepreneurship, communication, and other everyday skills, our workshops create space to learn something new, ask questions, share knowledge, and grow alongside one another.",
     desc: "Practical and thoughtful: faith, personal development, wellness, relationships, career, financial literacy, parenting, mental and emotional wellbeing. Taught with care, open to questions.",
     cta: { label: "Learn with us", href: "events.html" },
     homeCta: { label: "Learn with us", href: "events.html" },
