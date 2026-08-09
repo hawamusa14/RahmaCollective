@@ -30,17 +30,17 @@ window.RAHMA.board = [
     roles: ["Board Treasurer", "Co-Director of Partnerships & Development"],
   },
   {
-    name: "Bita Mosallai",
-    roles: [
-      "Director of Community Outreach & Engagement",
-      "Co-Director of Marketing & Communications",
-    ],
-  },
-  {
     name: "Hany Musa",
     roles: [
       "Board Secretary",
       "Director of Social Impact & Community Initiatives",
+    ],
+  },
+  {
+    name: "Bita Mosallai",
+    roles: [
+      "Director of Community Outreach & Engagement",
+      "Co-Director of Marketing & Communications",
     ],
   },
   {
