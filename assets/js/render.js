@@ -57,7 +57,7 @@
     everyone: "Everyone",
     women: "Women",
     men: "Men",
-    youth: "Youth & teens",
+    youth: "Youth & Teens",
     families: "Families",
     volunteers: "Volunteers",
   };

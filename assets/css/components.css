@@ -366,6 +366,8 @@
 .page-hero h1 {
   color: var(--on-deep);
   max-width: 16em;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "calt" 0, "dlig" 0;
 }
 
 .page-hero .lede {
