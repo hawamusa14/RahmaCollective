@@ -86,7 +86,7 @@
       '<span class="pill">' +
       escapeHtml(audience) +
       "</span>" +
-      (isPast ? '<span class="pill pill--outline">Past gathering</span>' : "") +
+      (isPast ? '<span class="pill pill--outline">Past Gathering</span>' : "") +
       "</div>" +
       "<p>" +
       escapeHtml(event.description) +
