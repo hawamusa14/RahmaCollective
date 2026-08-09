@@ -459,6 +459,15 @@
   object-fit: cover;
 }
 
+.photo-slot--portrait {
+  aspect-ratio: 3 / 4;
+}
+
+.photo-slot--portrait img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .motif-divider {
   display: flex;
   justify-content: center;
