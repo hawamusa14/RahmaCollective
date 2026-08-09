@@ -349,6 +349,7 @@
 
   .hero__art {
     max-width: 26rem;
+    margin-inline: auto;
   }
 }
 
@@ -422,6 +423,8 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
+  mix-blend-mode: multiply;
+  transform: scale(1.28);
 }
 
 /* Photo slots: replace an art panel with <img> when real photography exists. */
