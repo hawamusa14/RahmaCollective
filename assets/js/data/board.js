@@ -6,7 +6,7 @@ window.RAHMA = window.RAHMA || {};
 window.RAHMA.board = [
   {
     name: "Nasra Abdi",
-    roles: ["Board President", "Director of Partnerships & Development"],
+    roles: ["Board President", "Co-Director of Partnerships & Development"],
   },
   {
     name: "Hawa Musa",
@@ -46,7 +46,7 @@ window.RAHMA.board = [
   {
     name: "Khadija Artan",
     roles: [
-      "Director of Marketing & Communications",
+      "Co-Director of Marketing & Communications",
       "Co-Director of Professional Development & Mentorship",
     ],
   },
