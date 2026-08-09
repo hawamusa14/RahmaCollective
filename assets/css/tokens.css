@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Rahma Collective — design tokens
+   Single source of truth for color, type, space, shape, and motion.
+   ========================================================================== */
+
+:root {
+  /* Color — brand */
+  --oxblood: #40141f;        /* depth: page heroes, footer, CTA bands */
+  --burgundy: #5e1f2e;       /* primary: headlines, key CTAs */
+  --burgundy-deep: #4a1824;  /* primary hover */
+  --ivory: #f8f3e9;          /* ground: main background */
+  --beige: #eee4d2;          /* shift: alternating sections */
+  --cream-card: #fcf9f1;     /* card surface on ivory */
+  --card-line: #e3d7c0;      /* hairline borders on light */
+  --brass: #a8854b;          /* accent: decorative, large, on dark */
+  --brass-deep: #7c5f33;     /* accent text on light (WCAG AA) */
+  --charcoal: #2a2226;       /* body text */
+  --warm-gray: #6e6259;      /* meta text (AA on ivory) */
+  --warm-gray-decor: #897c73;/* decorative only */
+
+  /* Color — semantic on dark surfaces */
+  --on-deep: #f8f3e9;
+  --on-deep-soft: rgba(248, 243, 233, 0.78);
+  --on-deep-line: rgba(248, 243, 233, 0.22);
+
+  /* Typography */
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-arabic: "Amiri", "Traditional Arabic", serif;
+
+  --text-display: clamp(2.75rem, 6vw, 4.25rem);
+  --text-h1: clamp(2.25rem, 4.6vw, 3.25rem);
+  --text-h2: clamp(1.75rem, 3.4vw, 2.375rem);
+  --text-h3: clamp(1.25rem, 2.2vw, 1.5rem);
+  --text-body: 1.0625rem;
+  --text-lede: clamp(1.125rem, 1.8vw, 1.3125rem);
+  --text-meta: 0.8125rem;
+
+  /* Space */
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --section-pad: clamp(4rem, 9vw, 7rem);
+  --container: 72.5rem; /* 1160px */
+  --container-narrow: 46rem;
+  --gutter: 1.5rem;
+
+  /* Shape */
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur: 240ms;
+
+  /* Layering */
+  --z-header: 100;
+  --z-drawer: 200;
+}

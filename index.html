@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahma Collective — Rooted in faith. Built on trust. Connected through community.</title>
+  <meta name="description" content="A community collective in San Diego gathering across generations to learn, reflect, serve, and belong — rooted in Islamic values, open to all.">
+  <!-- TODO before launch: confirm the final domain and add a raster og-image (1200×630) -->
+  <link rel="canonical" href="https://rahmacollective.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rahma Collective — Rooted in faith. Built on trust. Connected through community.">
+  <meta property="og:description" content="A community collective in San Diego gathering across generations to learn, reflect, serve, and belong — rooted in Islamic values, open to all.">
+  <meta property="og:url" content="https://rahmacollective.org/">
+  <meta property="og:image" content="https://rahmacollective.org/assets/img/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+  <!-- Motif library: concentric "gathering" rings + horizon, in light- and dark-surface variants -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="motif-rings" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="26" fill="none" stroke="#5E1F2E" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="48" fill="none" stroke="#A8854B" stroke-width="1.25"/>
+        <circle cx="100" cy="100" r="70" fill="none" stroke="#5E1F2E" stroke-width="1" opacity="0.5"/>
+        <circle cx="100" cy="100" r="90" fill="none" stroke="#897C73" stroke-width="1" opacity="0.35"/>
+        <circle cx="100" cy="100" r="4" fill="#5E1F2E"/>
+      </symbol>
+      <symbol id="motif-rings-light" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="26" fill="none" stroke="#F8F3E9" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="48" fill="none" stroke="#A8854B" stroke-width="1.25"/>
+        <circle cx="100" cy="100" r="70" fill="none" stroke="#F8F3E9" stroke-width="1" opacity="0.45"/>
+        <circle cx="100" cy="100" r="90" fill="none" stroke="#F8F3E9" stroke-width="1" opacity="0.25"/>
+        <circle cx="100" cy="100" r="4" fill="#A8854B"/>
+      </symbol>
+      <symbol id="motif-horizon" viewBox="0 0 200 140">
+        <path d="M20 96 H180" fill="none" stroke="#5E1F2E" stroke-width="1.5"/>
+        <path d="M64 96 a36 36 0 0 1 72 0" fill="none" stroke="#5E1F2E" stroke-width="1.5"/>
+        <circle cx="44" cy="87" r="5" fill="none" stroke="#A8854B" stroke-width="1.25"/>
+        <circle cx="158" cy="87" r="5" fill="none" stroke="#A8854B" stroke-width="1.25"/>
+        <circle cx="100" cy="34" r="3.5" fill="#A8854B"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="wordmark" href="index.html" aria-label="Rahma Collective — home">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#motif-rings"></use></svg>
+        Rahma Collective
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn--primary btn--sm" href="get-involved.html">Join the Community</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" hidden></div>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile" hidden>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="events.html">Events</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn--primary" href="get-involved.html">Join the Community</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow reveal">Rahma Collective · San Diego</span>
+          <h1 class="display reveal">Rooted in faith. Built on trust. <em>Connected through community.</em></h1>
+          <p class="lede reveal">We&rsquo;re a community of people gathering to learn, reflect, serve, and make more room for one another — rooted in Islamic values, open to everyone who walks in.</p>
+          <div class="btn-row reveal">
+            <a class="btn btn--primary" href="about.html">Explore Rahma Collective</a>
+            <a class="btn btn--outline" href="get-involved.html">Join the Community</a>
+          </div>
+        </div>
+        <div class="hero__art reveal">
+          <div class="art-panel art-panel--tall">
+            <img src="assets/img/gathering-coffee.png" alt="Two friends laughing together over coffee" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission strip -->
+    <section class="section section--tint" aria-label="Our mission">
+      <div class="container container--narrow mission-strip">
+        <p class="serif reveal">Our mission is to cultivate a stronger, more connected community — through compassion, education, mentorship, meaningful experiences, and the simple act of gathering.</p>
+        <a class="link-arrow reveal" href="about.html#mission">More about our mission</a>
+      </div>
+    </section>
+
+    <!-- What Rahma means -->
+    <section class="section" aria-labelledby="rahma-heading">
+      <div class="container feature">
+        <div class="reveal">
+          <p class="word-display arabic" lang="ar" aria-hidden="true">رحمة</p>
+          <p class="word-gloss">rahma — mercy, compassion, tender care</p>
+        </div>
+        <div class="prose">
+          <span class="eyebrow reveal">Our name</span>
+          <h2 id="rahma-heading" class="reveal" style="margin-top: var(--space-2)">What rahma means</h2>
+          <p class="reveal" style="margin-top: var(--space-3)">Rahma is an Arabic word for mercy — not the grand, abstract kind, but the everyday kind: a seat saved for you, a question taken seriously, a door held open. It&rsquo;s the community we hope to build, one gathering at a time.</p>
+          <p class="reveal">What would our neighborhoods look like if we made more room for one another? We&rsquo;re here to find out.</p>
+          <p class="reveal" style="margin-top: var(--space-4)"><a class="link-arrow" href="about.html">Read our story</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program pathways -->
+    <section class="section section--tint" aria-labelledby="pathways-heading">
+      <div class="container">
+        <div class="section-row">
+          <div class="section-head">
+            <span class="eyebrow reveal">What we do</span>
+            <h2 id="pathways-heading" class="reveal">One collective, many doors</h2>
+            <p class="lede reveal">Different people find different forms of belonging here. All of it counts.</p>
+          </div>
+          <a class="link-arrow reveal" href="programs.html">All nine program areas</a>
+        </div>
+        <div class="grid grid--3" data-render="programs" data-mode="home" data-stagger></div>
+      </div>
+    </section>
+
+    <!-- Shaah & Caano feature -->
+    <section class="section" aria-labelledby="shaah-heading">
+      <div class="container feature">
+        <div class="reveal">
+          <div class="art-panel">
+            <img src="assets/img/reading-nook.png" alt="A cozy reading corner with full bookshelves, a linen chair, and a fresh cup of coffee" loading="lazy">
+          </div>
+        </div>
+        <div class="feature__body">
+          <span class="eyebrow reveal">Featured program</span>
+          <h2 id="shaah-heading" class="feature__lockup reveal">Shaah &amp; Caano</h2>
+          <p class="word-gloss reveal" style="font-size: 1rem">Books, tea, reflection, and sisterhood.</p>
+          <p class="reveal">Once a month, women gather around a shared table — shaah in hand, a book open, conversation unhurried. It&rsquo;s more than a book club. It&rsquo;s a place to read together, ask real questions, laugh, reflect on faith and life, and build friendships that outlast the meeting.</p>
+          <div class="feature__details reveal">
+            <span class="pill">Monthly</span>
+            <span class="pill">Women&rsquo;s circle</span>
+            <span class="pill">All reading levels welcome</span>
+          </div>
+          <div class="btn-row reveal">
+            <a class="btn btn--primary" href="programs.html#shaah-caano">Pull Up a Chair</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming events -->
+    <section class="section section--tint" aria-labelledby="events-heading" data-render="events" data-limit="3">
+      <div class="container">
+        <div class="section-row">
+          <div class="section-head">
+            <span class="eyebrow reveal">Events</span>
+            <h2 id="events-heading" class="reveal">Gather with us</h2>
+            <p class="lede reveal">The calendar is just getting started — new gatherings are added as they&rsquo;re planned.</p>
+          </div>
+          <a class="link-arrow reveal" href="events.html">See all events</a>
+        </div>
+        <div class="grid grid--3" data-events-list data-stagger hidden></div>
+        <div class="empty-state" data-events-empty>
+          <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#motif-rings"></use></svg>
+          <h3>Gatherings are being planned</h3>
+          <p>Our first events are taking shape right now. Join the community and you&rsquo;ll be the first to know.</p>
+          <a class="btn btn--primary" href="get-involved.html">Join the Community</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ways to get involved -->
+    <section class="section" aria-labelledby="involved-heading">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow reveal">Take part</span>
+          <h2 id="involved-heading" class="reveal">There&rsquo;s a way in for everyone</h2>
+        </div>
+        <div class="chip-list reveal" style="justify-content:center; max-width: 44rem; margin-inline:auto">
+          <a class="pill" href="events.html">Attend an event</a>
+          <a class="pill" href="get-involved.html?interest=volunteering#form">Volunteer your time</a>
+          <a class="pill" href="get-involved.html?interest=mentorship#form">Become a mentor</a>
+          <a class="pill" href="get-involved.html?interest=partnership#form">Partner with us</a>
+          <a class="pill" href="get-involved.html?interest=supporting#form">Support the work</a>
+        </div>
+        <p class="reveal" style="text-align:center; margin-top: var(--space-5)">
+          <a class="link-arrow" href="get-involved.html">Explore ways to get involved</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Impact framework -->
+    <section class="section section--tint" aria-labelledby="impact-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Our footprint</span>
+          <h2 id="impact-heading" class="reveal">Our story is just beginning</h2>
+          <p class="lede reveal">Rahma Collective is young. We won&rsquo;t pad this page with numbers we haven&rsquo;t earned yet. As gatherings happen, we&rsquo;ll count what counts — and publish it here.</p>
+        </div>
+        <div class="stats" data-stagger>
+          <div class="stat reveal">
+            <div class="stat__value">—</div>
+            <div class="stat__label">Events hosted · coming soon</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__value">—</div>
+            <div class="stat__label">Community members welcomed · coming soon</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__value">—</div>
+            <div class="stat__label">Volunteers engaged · coming soon</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__value">—</div>
+            <div class="stat__label">Mentorship connections · coming soon</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join band -->
+    <section class="section" aria-labelledby="join-heading">
+      <div class="container">
+        <div class="cta-band reveal">
+          <svg class="cta-band__motif" viewBox="0 0 200 200" aria-hidden="true"><use href="#motif-rings-light"></use></svg>
+          <span class="eyebrow">Join us</span>
+          <h2 id="join-heading">Come as you are.</h2>
+          <p>Practicing, reconnecting, curious, or simply looking for your people — there&rsquo;s a seat for you here.</p>
+          <div class="btn-row">
+            <a class="btn btn--light" href="get-involved.html">Join the Community</a>
+            <a class="btn btn--ghost-light" href="events.html">Attend an event</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="wordmark" href="index.html" aria-label="Rahma Collective — home">
+            <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#motif-rings-light"></use></svg>
+            Rahma Collective
+          </a>
+          <p class="footer-mission">Rahma Collective cultivates a stronger, more connected San Diego through compassion, education, mentorship, and meaningful experiences — rooted in Islamic values, open to all.</p>
+        </div>
+        <div>
+          <h2 class="footer-heading">Explore</h2>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="events.html">Events</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h2 class="footer-heading">Take part</h2>
+          <div class="footer-links">
+            <a href="get-involved.html">Join the community</a>
+            <a href="get-involved.html?interest=volunteering#form">Volunteer</a>
+            <a href="get-involved.html?interest=mentorship#form">Become a mentor</a>
+            <a href="get-involved.html?interest=partnership#form">Partner with us</a>
+            <a href="get-involved.html?interest=supporting#form">Support the work</a>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h2 class="footer-heading">Letters from the Collective</h2>
+          <p>Gatherings, books we&rsquo;re loving, and the occasional reflection. Once in a while, never noise.</p>
+          <form data-form action="#">
+            <label class="visually-hidden" for="newsletter-email">Your email</label>
+            <input id="newsletter-email" type="email" name="email" placeholder="Your email" required>
+            <button class="btn btn--light btn--sm" type="submit">Subscribe</button>
+          </form>
+          <p class="form-note" data-form-success hidden>You&rsquo;re in. Letters arrive once in a while — never noise.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Rahma Collective · San Diego, California</span>
+        <span class="tagline">Rooted in faith. Built on trust. Connected through community.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data/programs.js" defer></script>
+  <script src="assets/js/data/events.js" defer></script>
+  <script src="assets/js/render.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* ==========================================================================
+   Rahma Collective — base
+   Reset, document defaults, typography, and layout primitives.
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--charcoal);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--burgundy);
+  text-decoration-color: rgba(94, 31, 46, 0.35);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Visible, keyboard-first focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- typography ---------- */
+
+h1,
+h2,
+h3,
+.serif {
+  font-family: var(--font-serif);
+  font-weight: 480;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  color: var(--burgundy);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--text-h1);
+  font-weight: 460;
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+.display {
+  font-family: var(--font-serif);
+  font-size: var(--text-display);
+  font-weight: 440;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  color: var(--burgundy);
+  text-wrap: balance;
+}
+
+.arabic {
+  font-family: var(--font-arabic);
+  direction: rtl;
+}
+
+.lede {
+  font-size: var(--text-lede);
+  line-height: 1.6;
+  color: var(--warm-gray);
+  max-width: 38em;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+}
+
+.section--deep .eyebrow,
+.cta-band .eyebrow,
+.page-hero .eyebrow {
+  color: var(--brass);
+}
+
+.meta {
+  font-size: var(--text-meta);
+  color: var(--warm-gray);
+}
+
+/* ---------- layout primitives ---------- */
+
+.container {
+  width: min(100% - (var(--gutter) * 2), var(--container));
+  margin-inline: auto;
+}
+
+.container--narrow {
+  width: min(100% - (var(--gutter) * 2), var(--container-narrow));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-pad);
+}
+
+.section--tint {
+  background: var(--beige);
+}
+
+.section--deep {
+  background: var(--oxblood);
+  color: var(--on-deep);
+}
+
+.section--deep h1,
+.section--deep h2,
+.section--deep h3,
+.section--deep .serif {
+  color: var(--on-deep);
+}
+
+.section--deep .lede,
+.section--deep p {
+  color: var(--on-deep-soft);
+}
+
+.section + .section {
+  border-top: 1px solid transparent; /* keeps rhythm intentional; tinted sections carry the shift */
+}
+
+.section-head {
+  max-width: 44rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section-head > * + * {
+  margin-top: var(--space-3);
+}
+
+.section-head--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 60rem) {
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 40rem) {
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ---------- skip link ---------- */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-3);
+  z-index: calc(var(--z-drawer) + 1);
+  background: var(--burgundy);
+  color: var(--ivory);
+  padding: 0.6em 1.2em;
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top var(--dur) var(--ease);
+}
+
+.skip-link:focus-visible {
+  top: var(--space-3);
+}
+
+/* ---------- accessibility helpers ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
