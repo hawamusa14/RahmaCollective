@@ -90,22 +90,31 @@
       );
     }
     var ring = member.photo
-      ? '<span class="profile-card__ring" aria-hidden="true"><img src="' +
+      ? '<span class="profile-card__ring"><img src="' +
         escapeHtml(member.photo) +
-        '" alt=""></span>'
+        '" alt="' +
+        escapeHtml(member.name) +
+        '"></span>'
       : '<span class="profile-card__ring" aria-hidden="true">' +
         escapeHtml(member.name.charAt(0)) +
         "</span>";
-    var details = [];
-    if (member.role) details.push(escapeHtml(member.role));
-    if (member.area) details.push(escapeHtml(member.area));
+    var roles = member.roles || [];
+    if (!roles.length && member.role) roles = [member.role];
+    if (member.area) roles = roles.concat([member.area]);
+    var rolesHtml = roles.length
+      ? '<p class="meta">' +
+        roles.map(function (r) {
+          return escapeHtml(r);
+        }).join("<br>") +
+        "</p>"
+      : "";
     return (
       '<article class="card profile-card reveal">' +
       ring +
       "<h3>" +
       escapeHtml(member.name) +
       "</h3>" +
-      (details.length ? '<p class="meta">' + details.join(" · ") + "</p>" : "") +
+      rolesHtml +
       (member.bio ? "<p>" + escapeHtml(member.bio) + "</p>" : "") +
       "</article>"
     );

@@ -17,15 +17,15 @@
 window.RAHMA = window.RAHMA || {};
 window.RAHMA.events = [
   {
-    title: "Shaah & Caano — Beginning Women Around the Messenger",
+    title: "Shaah & Caano — Book Club, Beach Day & Seashell Mirror Craft",
     displayDate: "Sat · Aug 15",
     dateISO: "2026-08-15",
-    time: "",
-    location: "San Diego — venue announced with RSVP",
+    time: "4–8 PM",
+    location: "La Jolla Beach",
     type: "book-club",
     audience: "women",
     description:
-      "The circle opens its next book: Women Around the Messenger by Muhammad 'Ali Qutb. Tea is poured, introductions are made, and first intentions are set. New readers are always welcome — come as you are.",
+      "The circle opens Women Around the Messenger by Muhammad 'Ali Qutb on the sand at La Jolla — book discussion, a beach afternoon, and a hands-on craft: handheld seashell mirrors. Food, snacks, drinks, and tea are provided, as always. New readers welcome.",
     rsvp: "get-involved.html?interest=shaah-caano#form",
   },
   {

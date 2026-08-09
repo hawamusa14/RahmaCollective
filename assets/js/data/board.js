@@ -1,21 +1,51 @@
 /* Rahma Collective — board of directors
-   Eight members named; a ninth seat shows as a placeholder
-   until the member confirms.
-
-   Full member shape (add as members confirm):
-   { name: "Name", role: "President", area: "Programs",
-     bio: "One or two honest sentences.",
-     photo: "assets/img/board/name.jpg" }
+   Member shape:
+   { name, roles: ["Title", ...], photo?, bio? }
 */
 window.RAHMA = window.RAHMA || {};
 window.RAHMA.board = [
-  { name: "Nasra Abdi", role: "Board member" },
-  { name: "Hawa Musa", role: "Board member" },
-  { name: "Faduma Haji", role: "Board member" },
-  { name: "Faiza", role: "Board member" },
-  { name: "Bita Mosallai", role: "Board member" },
-  { name: "Hany Musa", role: "Board member" },
-  { name: "Khadija Artan", role: "Board member" },
-  { name: "Noor Haleem", role: "Board member" },
-  { placeholder: true },
+  {
+    name: "Nasra Abdi",
+    roles: ["Board President", "Co-Director of Partnerships & Development"],
+  },
+  {
+    name: "Hawa Musa",
+    photo: "assets/img/hawa-headshot.jpg",
+    roles: [
+      "Board Vice-President",
+      "Director of Events & Programming",
+      "Co-Director of Membership Coordination",
+      "Co-Director of Marketing & Communications",
+    ],
+  },
+  {
+    name: "Faduma Haji",
+    roles: [
+      "Co-Director of Professional Development & Mentorship",
+      "Co-Director of Membership Coordination",
+    ],
+  },
+  {
+    name: "Faiza",
+    roles: ["Co-Director of Partnerships & Development"],
+  },
+  {
+    name: "Bita Mosallai",
+    roles: ["Co-Director of Marketing & Communications"],
+  },
+  {
+    name: "Hany Musa",
+    roles: ["Board Secretary"],
+  },
+  {
+    name: "Khadija Artan",
+    roles: [
+      "Co-Director of Marketing & Communications",
+      "Co-Director of Professional Development & Mentorship",
+    ],
+  },
+  {
+    name: "Noor Haleem",
+    roles: ["Board member"],
+  },
 ];
