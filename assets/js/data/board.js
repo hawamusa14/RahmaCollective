@@ -12,7 +12,6 @@ window.RAHMA.board = [
     name: "Hawa Musa",
     photo: "assets/img/hawa-headshot.jpg",
     roles: [
-      "Board Vice-President",
       "Director of Events & Programming",
       "Co-Director of Membership Coordination",
       "Co-Director of Marketing & Communications",
