@@ -412,9 +412,11 @@
 }
 
 .art-panel--logo img {
-  object-fit: cover;
-  object-position: center top;
-  transform: scale(1.6) translateY(6%);
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+  padding: clamp(3rem, 9vw, 5rem);
+  box-sizing: border-box;
 }
 
 .art-panel--tall.art-panel--logo img {
@@ -442,7 +444,7 @@
   object-fit: contain;
   object-position: center;
   mix-blend-mode: multiply;
-  transform: scale(1.28);
+  transform: scale(1.12);
 }
 
 /* Photo slots: replace an art panel with <img> when real photography exists. */
@@ -612,7 +614,11 @@
   font-family: var(--font-serif);
   font-size: 1.5rem;
   color: var(--burgundy);
-  background: var(--ivory);
+  background-color: var(--ivory);
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cg%20fill='%23a8854b'%20opacity='0.18'%3E%3Cellipse%20cx='50'%20cy='17'%20rx='5'%20ry='8'/%3E%3Cellipse%20cx='50'%20cy='17'%20rx='5'%20ry='8'%20transform='rotate(45,50,50)'/%3E%3Cellipse%20cx='50'%20cy='17'%20rx='5'%20ry='8'%20transform='rotate(90,50,50)'/%3E%3Cellipse%20cx='50'%20cy='17'%20rx='5'%20ry='8'%20transform='rotate(135,50,50)'/%3E%3Cellipse%20cx='50'%20cy='17'%20rx='5'%20ry='8'%20transform='rotate(180,50,50)'/%3E%3Cellipse%20cx='50'%20cy='17'%20rx='5'%20ry='8'%20transform='rotate(225,50,50)'/%3E%3Cellipse%20cx='50'%20cy='17'%20rx='5'%20ry='8'%20transform='rotate(270,50,50)'/%3E%3Cellipse%20cx='50'%20cy='17'%20rx='5'%20ry='8'%20transform='rotate(315,50,50)'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 82%;
 }
 
 .profile-card__ring img {
@@ -650,6 +656,11 @@
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 5vw, 4.5rem);
   align-items: center;
+}
+
+.feature .art-panel--logo {
+  max-height: 30rem;
+  width: 100%;
 }
 
 .feature__body > * + * {
