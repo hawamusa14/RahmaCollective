@@ -415,7 +415,7 @@
   object-fit: contain;
   object-position: center;
   transform: none;
-  padding: clamp(3rem, 9vw, 5rem);
+  padding: clamp(1rem, 3vw, 1.5rem);
   box-sizing: border-box;
 }
 
