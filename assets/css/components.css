@@ -159,8 +159,8 @@
 }
 
 .wordmark__mark {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.375rem;
+  height: 2.375rem;
   flex: none;
   border-radius: 50%;
   object-fit: cover;
@@ -423,7 +423,7 @@
   object-fit: contain;
   object-position: center;
   transform: none;
-  padding: clamp(1.5rem, 6vw, 3rem);
+  padding: clamp(1.25rem, 4vw, 2rem);
   box-sizing: border-box;
 }
 
