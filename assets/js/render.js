@@ -1,4 +1,4 @@
-/* Rahma Collective — content renderer
+/* Mawwada Collective — content renderer
    Renders data collections (window.RAHMA.*) into [data-render] targets.
    Replace the data files with a CMS feed later and the templates stay unchanged. */
 (function () {

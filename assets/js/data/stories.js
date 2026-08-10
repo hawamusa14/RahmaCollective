@@ -1,4 +1,4 @@
-/* Rahma Collective — stories collection
+/* Mawwada Collective — stories collection
  *
  * First-person community stories. Empty until real stories are collected —
  * the Community page shows labeled placeholders while this array is empty.

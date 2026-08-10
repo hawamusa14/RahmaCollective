@@ -1,4 +1,4 @@
-/* Rahma Collective — board of directors
+/* Mawwada Collective — board of directors
    Member shape:
    { name, roles: ["Title", ...], photo?, bio? }
 */

@@ -1,4 +1,4 @@
-/* Rahma Collective — site behavior
+/* Mawwada Collective — site behavior
  * Header state, mobile drawer, scroll reveals, forms, and small niceties.
  * No dependencies; everything degrades gracefully without JS.
  */

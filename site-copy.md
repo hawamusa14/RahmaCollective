@@ -1,4 +1,4 @@
-# Rahma Collective — Site Copy
+# Mawwada Collective — Site Copy
 
 **Step 4 deliverable · v1 · August 9, 2026 · For your review and markup**
 
@@ -15,37 +15,37 @@ Voice: warm, intelligent, reflective, welcoming, clear, human. Short sentences. 
 ### Footer
 
 - Wordmark + tagline
-- Mission line: *Rahma Collective cultivates a stronger, more connected San Diego through compassion, education, mentorship, and meaningful experiences — rooted in Islamic values, open to all.*
+- Mission line: *Mawwada Collective cultivates a stronger, more connected San Diego through compassion, education, mentorship, and meaningful experiences — rooted in Islamic values, open to all.*
 - Link columns: **Explore** (About, Programs, Events, Community) · **Take part** (Join, Volunteer, Partner, Support) · **Connect** (email `[placeholder]`, Instagram / socials `[placeholder]`)
 - Newsletter block — heading: **Letters from the Collective**. Copy: *Gatherings, books we're loving, and the occasional reflection. Once in a while, never noise.* Field placeholder: *Your email* · Button: **Subscribe**
-- Fine print: *© Rahma Collective · San Diego, California*
+- Fine print: *© Mawwada Collective · San Diego, California*
 
 ---
 
 ## 1 · Home
 
-**Meta title:** Rahma Collective — Rooted in faith. Built on trust. Connected through community.
+**Meta title:** Mawwada Collective — Rooted in faith. Built on trust. Connected through community.
 **Meta description:** A community collective in San Diego gathering across generations to learn, reflect, serve, and belong — rooted in Islamic values, open to all.
 
 ### Hero
 
-- Eyebrow: **Rahma Collective · San Diego**
+- Eyebrow: **Mawwada Collective · San Diego**
 - H1: **Rooted in faith. Built on trust. Connected through community.**
 - Sub: *We're a community of people gathering to learn, reflect, serve, and make more room for one another — rooted in Islamic values, open to everyone who walks in.*
-- Primary CTA: **Explore Rahma Collective** · Secondary CTA: **Join the Community**
+- Primary CTA: **Explore Mawwada Collective** · Secondary CTA: **Join the Community**
 
 ### Mission strip
 
 *Our mission is to cultivate a stronger, more connected community — through compassion, education, mentorship, meaningful experiences, and the simple act of gathering.*
 Link: More about our mission →
 
-### What Rahma Means
+### What Mawwada Means
 
 - Eyebrow: **Our name**
-- H2: **What rahma means**
-- Display line: **رحمة** — *rahma: mercy, compassion, tender care.*
+- H2: **What mawwada means**
+- Display line: **مودة** — *mawwada: love, affection, warm regard.*
 
-*Rahma is an Arabic word for mercy — not the grand, abstract kind, but the everyday kind: a seat saved for you, a question taken seriously, a door held open. It's the community we hope to build, one gathering at a time.*
+*Mawwada is an Arabic word for love — not the grand, abstract kind, but the everyday kind: a seat saved for you, a question taken seriously, a door held open. It's the community we hope to build, one gathering at a time.*
 
 *What would our neighborhoods look like if we made more room for one another? We're here to find out.*
 
@@ -103,7 +103,7 @@ CTA: See all events →
 - Eyebrow: **Our footprint**
 - H2: **Our story is just beginning**
 
-*Rahma Collective is young. We won't pad this page with numbers we haven't earned yet. As gatherings happen, we'll count what counts — events hosted, people welcomed, hours volunteered — and publish it here.*
+*Mawwada Collective is young. We won't pad this page with numbers we haven't earned yet. As gatherings happen, we'll count what counts — events hosted, people welcomed, hours volunteered — and publish it here.*
 
 `[Stat placeholders: events hosted · community members welcomed · volunteers engaged · mentorship connections — each labeled "coming soon"]`
 
@@ -117,14 +117,14 @@ CTA: See all events →
 
 ## 2 · About
 
-**Meta title:** About — Rahma Collective · San Diego
-**Meta description:** Our story, our values, and the nine community members behind Rahma Collective — rooted in Islamic values, open to all of San Diego.
+**Meta title:** About — Mawwada Collective · San Diego
+**Meta description:** Our story, our values, and the nine community members behind Mawwada Collective — rooted in Islamic values, open to all of San Diego.
 
 ### Page hero
 
 - Eyebrow: **About us**
 - H1: **Built together.**
-- Lede: *Rahma Collective began with a simple observation: people are hungry for spaces they can trust — to gather, to learn, to be themselves. So we're building one.*
+- Lede: *Mawwada Collective began with a simple observation: people are hungry for spaces they can trust — to gather, to learn, to be themselves. So we're building one.*
 
 ### Our story
 
@@ -132,7 +132,7 @@ CTA: See all events →
 
 *San Diego is full of people, and short on places to truly meet them. Between work, school, and screens, whole seasons can pass without a real conversation — without being known by anyone outside your own front door.*
 
-*Rahma Collective is our answer: not a program, a collective. A living room more than a lecture hall. Somewhere you can walk in as yourself — practicing, reconnecting, curious, skeptical, new to the city, new to faith, or carrying both your whole life — and be received the same way.*
+*Mawwada Collective is our answer: not a program, a collective. A living room more than a lecture hall. Somewhere you can walk in as yourself — practicing, reconnecting, curious, skeptical, new to the city, new to faith, or carrying both your whole life — and be received the same way.*
 
 *We are rooted in Islam: it shapes how we host, how we listen, how we serve. And our doors are open to Muslims and non-Muslims alike, because mercy that stops at a boundary isn't really mercy. Islam is our foundation, not our fence.*
 
@@ -156,20 +156,20 @@ In practice, that means:
 
 - H2: **What we hold**
 
-1. **Compassion** — Rahma first. Kindness is the baseline, not the bonus.
+1. **Compassion** — Mawwada first. Kindness is the baseline, not the bonus.
 2. **Trust** — Rooms where you don't have to perform. What you bring is enough.
 3. **Belonging** — Different people, different doors, one collective.
 4. **Growth** — At your own pace, in your own season. No rushing, no judgment.
 5. **Generosity** — Of time, knowledge, attention, and table space.
 6. **Responsibility** — Community is not something you attend. It's something you build.
 
-### What Rahma Means — deeper
+### What Mawwada Means — deeper
 
 - H2: **The word we chose**
 
-*رحمة — rahma. Mercy, compassion, tenderness, grace. In Islamic tradition it is one of the first attributes of God, and one of the last things any of us stops needing.*
+*مودة — mawwada. Love, affection, warm regard. In Islamic tradition it is the deep, tender love God speaks of between hearts, and one of the last things any of us stops needing.*
 
-*For us, rahma is practical. It's the extra chair pulled up without being asked. It's a teenager's question taken seriously. It's tea poured for a stranger. If our name asks us one question, it's this: what would our communities look like if we made more room for one another?*
+*For us, mawwada is practical. It's the extra chair pulled up without being asked. It's a teenager's question taken seriously. It's tea poured for a stranger. If our name asks us one question, it's this: what would our communities look like if we made more room for one another?*
 
 ### Who we serve
 
@@ -206,7 +206,7 @@ Muslim women · Muslim men · Youth and teens · Young adults · Parents and fam
 
 ## 3 · Programs
 
-**Meta title:** Programs — Rahma Collective · San Diego
+**Meta title:** Programs — Mawwada Collective · San Diego
 **Meta description:** Gatherings, Shaah & Caano book club, workshops, mentorship, youth programming, outings, service, and events — one collective, many doors.
 
 ### Page hero
@@ -248,7 +248,7 @@ CTA: **Pull Up a Chair**
 
 ## 4 · Events
 
-**Meta title:** Events — Rahma Collective · San Diego
+**Meta title:** Events — Mawwada Collective · San Diego
 **Meta description:** Community gatherings, book club meetings, workshops, youth events, outings, and service projects in San Diego. Come as you are.
 
 ### Page hero
@@ -278,8 +278,8 @@ Each card: date eyebrow (e.g. SAT · MAR 14) · title · time + location · audi
 
 ## 5 · Get Involved
 
-**Meta title:** Get Involved — Rahma Collective · San Diego
-**Meta description:** Attend, volunteer, mentor, join the book club, partner, sponsor, or support — there's a way in for everyone at Rahma Collective.
+**Meta title:** Get Involved — Mawwada Collective · San Diego
+**Meta description:** Attend, volunteer, mentor, join the book club, partner, sponsor, or support — there's a way in for everyone at Mawwada Collective.
 
 ### Page hero
 
@@ -295,7 +295,7 @@ Each card: date eyebrow (e.g. SAT · MAR 14) · title · time + location · audi
 4. **Join Shaah & Caano** — *Books, tea, reflection, and sisterhood. Bring yourself; we'll bring the shaah.* → Pull up a chair
 5. **Partner With Us** — *Nonprofits, small businesses, and community spaces: let's build something for San Diego together.* → Partner with us
 6. **Sponsor an Event** — *Underwrite a dinner, a workshop, or a youth outing. Your name on something that actually matters to people.* → Sponsor an event
-7. **Support Rahma Collective** — *Your support keeps gatherings free or low-cost, books on the table, and doors open to everyone.* → Support the work *(donation flow activates post-launch)*
+7. **Support Mawwada Collective** — *Your support keeps gatherings free or low-cost, books on the table, and doors open to everyone.* → Support the work *(donation flow activates post-launch)*
 
 ### What to expect
 
@@ -311,8 +311,8 @@ Success message: *Thank you — you've reached a real person. We'll be in touch 
 
 ## 6 · Community
 
-**Meta title:** Our Community — Rahma Collective · San Diego
-**Meta description:** The people, stories, and partnerships behind Rahma Collective — a growing community in San Diego.
+**Meta title:** Our Community — Mawwada Collective · San Diego
+**Meta description:** The people, stories, and partnerships behind Mawwada Collective — a growing community in San Diego.
 
 ### Page hero
 
@@ -336,8 +336,8 @@ Success message: *Thank you — you've reached a real person. We'll be in touch 
 
 ## 7 · Contact
 
-**Meta title:** Contact — Rahma Collective · San Diego
-**Meta description:** Questions, ideas, partnerships, or a simple hello — reach Rahma Collective in San Diego.
+**Meta title:** Contact — Mawwada Collective · San Diego
+**Meta description:** Questions, ideas, partnerships, or a simple hello — reach Mawwada Collective in San Diego.
 
 ### Page hero
 
@@ -353,8 +353,8 @@ Success message: *Thank you — you've reached a real person. We'll be in touch 
 
 ### Side card
 
-- **General:** hello@rahmacollective.org `[placeholder]`
-- **Partnerships:** partners@rahmacollective.org `[placeholder]`
+- **General:** hello@mawwadacollective.org `[placeholder]`
+- **Partnerships:** partners@mawwadacollective.org `[placeholder]`
 - **Social:** Instagram · Facebook `[placeholders]`
 - **Where:** San Diego, California — gatherings across the city; venues announced with each event.
 
@@ -362,7 +362,7 @@ Success message: *Thank you — you've reached a real person. We'll be in touch 
 
 ## Master CTA vocabulary
 
-Join the Community · Explore Rahma Collective · Explore Events · Reserve a Seat · Get Involved · Apply to Volunteer · Become a Mentor · Partner With Us · Sponsor an Event · Support Rahma Collective · Pull Up a Chair · Send It Our Way · Read Our Story → · Share Your Story
+Join the Community · Explore Mawwada Collective · Explore Events · Reserve a Seat · Get Involved · Apply to Volunteer · Become a Mentor · Partner With Us · Sponsor an Event · Support Mawwada Collective · Pull Up a Chair · Send It Our Way · Read Our Story → · Share Your Story
 
 Rule: CTAs are used contextually — *Pull Up a Chair* belongs only to Shaah & Caano; the nav button is always *Join the Community*.
 

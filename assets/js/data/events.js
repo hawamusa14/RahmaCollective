@@ -1,4 +1,4 @@
-/* Rahma Collective — gatherings
+/* Mawwada Collective — gatherings
    Upcoming vs. past is computed from dateISO at render time,
    so events roll over automatically as days pass.
 
@@ -114,6 +114,6 @@ window.RAHMA.events = [
     type: "gatherings",
     audience: "everyone",
     description:
-      "Rahma Collective's first community gathering — an Eid picnic by the water at Harbor Island, with food, games, and an open invitation to the whole community.",
+      "Mawwada Collective's first community gathering — an Eid picnic by the water at Harbor Island, with food, games, and an open invitation to the whole community.",
   },
 ];

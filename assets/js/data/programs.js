@@ -1,4 +1,4 @@
-/* Rahma Collective — programs collection
+/* Mawwada Collective — programs collection
  *
  * Home renders the six entries marked `home: true`; the Programs page renders
  * every entry except the one marked `spotlight: true` (Shaah & Caano gets its
