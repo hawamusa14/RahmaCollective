@@ -417,6 +417,14 @@
   transform: scale(1.6) translateY(6%);
 }
 
+.art-panel--tall.art-panel--logo img {
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+  padding: clamp(1.5rem, 6vw, 3rem);
+  box-sizing: border-box;
+}
+
 .art-panel--tall {
   aspect-ratio: 4 / 5;
 }
