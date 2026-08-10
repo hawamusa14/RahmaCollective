@@ -5,12 +5,15 @@
 window.RAHMA = window.RAHMA || {};
 window.RAHMA.board = [
   {
-    name: "Nasra Abdi",
-    roles: ["Board President", "Director of Partnerships & Development"],
+    name: "Nasra A.",
+    roles: [
+      "Board President",
+      "Director of Partnerships & Development",
+      "Board Treasury",
+    ],
   },
   {
-    name: "Hawa Musa",
-    photo: "assets/img/hawa-headshot.jpg",
+    name: "Hawa M.",
     roles: [
       "Director of Events & Programming",
       "Co-Director of Membership Coordination",
@@ -18,7 +21,7 @@ window.RAHMA.board = [
     ],
   },
   {
-    name: "Faduma Haji",
+    name: "Faduma H.",
     roles: [
       "Director of Professional Development & Mentorship",
       "Co-Director of Membership Coordination",
@@ -29,21 +32,21 @@ window.RAHMA.board = [
     roles: ["Board Treasurer", "Co-Director of Partnerships & Development"],
   },
   {
-    name: "Hany Musa",
+    name: "Hany M.",
     roles: [
       "Board Secretary",
       "Director of Social Impact & Community Initiatives",
     ],
   },
   {
-    name: "Bita Mosallai",
+    name: "Bita M.",
     roles: [
       "Director of Community Outreach & Engagement",
       "Co-Director of Marketing & Communications",
     ],
   },
   {
-    name: "Khadija Artan",
+    name: "Khadija A.",
     roles: [
       "Director of Research & Impact",
       "Co-Director of Marketing & Communications",
@@ -51,7 +54,7 @@ window.RAHMA.board = [
     ],
   },
   {
-    name: "Noor Haleem",
+    name: "Noor H.",
     roles: [
       "Co-Director of Events & Programming",
       "Co-Director of Professional Development & Mentorship",
